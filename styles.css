@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-bg {
+    background-color: rgb(0, 9, 21);
+    background-image: radial-gradient(at 0% 0%, rgb(24, 0, 45) 0px, rgba(0, 0, 0, 0) 50%), radial-gradient(at 100% 100%, rgb(24, 0, 45) 0px, rgba(0, 0, 0, 0) 50%);
+}
+
+.bg-footer {
+    background-color: #180733;
+}
+
+.bg-bgLightTransparent {
+    background-color: rgba(0, 10, 22, 0.5);
+}
+
+.text-bal {
+    max-width: 80ch;
+}
+
+.title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
