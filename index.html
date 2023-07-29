@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -20,7 +23,7 @@
 
             <nav class="flex items-center justify-center gap-5 lg:gap-8">
                 <ul
-                    class="text-center flex flex-col items-center relative justify-center gap-5 text-gray-600 dark:text-gray-300 text-2xl max-w-screen-xl w-5/6 h-screen lg:flex-row lg:h-0 lg:text-lg m-auto whitespace-nowrap">
+                    class="text-center flex flex-col items-center gap-1 relative justify-center gap-5 text-gray-600 dark:text-gray-300 text-2xl max-w-screen-xl w-5/6 h-screen lg:flex-row lg:h-0 lg:text-lg m-auto whitespace-nowrap">
                     <li>
                         <a href="#" class="hover:text-purple-600 transition ease-out duration-300">Home</a>
                     </li>
@@ -38,9 +41,35 @@
             </>
     </header>
 
-    <main class="bg-white text-gray-600 selection:bg-gray-400 selection:text-white dark:bg-bgDark dark:text-gray-300">
-        <section class="main-bg min-h-screen" id="">
+    <main class="main-bg text-gray-600 selection:bg-gray-400 selection:text-white dark:bg-bgDark dark:text-gray-300">
+        <section
+            class="max-w-7xl w-5/6 min-h-screen pt-20 flex flex-col items-center justify-center gap-9 m-auto lg:flex-row-reverse lg:justify-evenly"
+            id="">
+            <img src="https://media.licdn.com/dms/image/D5603AQEz4J1zdB9U1A/profile-displayphoto-shrink_400_400/0/1689537265905?e=1695859200&v=beta&t=iKM6IBjxzgdUeD-UAaJFzYoCfyASpyaV9yj6aP8I9sg"
+                alt="" class="animate-profile">
+            <div class="text-center lg:text-left">
+                <p class="dark:text-gray-100 text-xl md:text-2xl xl:text-3xl">Hi, I'm Cesar 👋</p>
+                <h2
+                    class="text-2xl scale-110 sm:scale-100 sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500 md:text-4xl xl:text-5xl">
+                    Frontend Developer</h2>
+                <p class="dark:text-gray-100 text-xl md:text-2xl xl:text-3xl">That loves creating web apps.</p>
+                <div class="flex gap-2 my-2">
+                    <i class="fa-brands fa-linkedin text-xl text-white"></i>
+                    <i class="fa-brands fa-github text-white text-xl text-white"></i>
+                </div>
+                <div class="flex gap-4">
+                    <a href="" target="_blank" class="btn btn-outline">
+                        Resume
+                    </a>
+                    <a href="" class="btn">
+                        <div class="flex gap-3 items-center">
+                            About
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
 
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="about" class="bg-bgLight flex items-center justify-center dark:bg-bgDarkSecondary bg-purple-950">
             <div class="flex flex-col gap-12 max-w-7xl w-5/6 pt-20 pb-20">
@@ -51,36 +80,47 @@
                         interfaces. My strongest skills are HTML, CSS, and JavaScript, and I'm always learning new
                         technologies and tools. I'm also experienced with React and other frameworks.</p>
                 </div>
-                <div class="flex">
-                    <h2 class="text-2xl">Tech Stack:</h2>
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-left text-2xl font-medium dark:text-white">Tech Stack:</h2>
+                    <div class="flex gap-12">
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/HTML.svg" alt="" class="icon select-none">
+                            <p>HTML</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/CSS.svg" alt="" class="icon select-none">
+                            <P>CSS</P>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/JavaScript.svg" alt="" class="icon select-none">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/ReactJS.svg" alt="" class="icon select-none">
+                            <p>ReactJS</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/Bootstrap.svg" alt="" class="icon select-none">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/Tailwind.svg" alt="" class="icon select-none">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/Git.svg" alt="" class="icon select-none">
+                            <p>Git</p>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <img src="/assets/GitHub.svg" alt="" class="icon select-none">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="flex flex-col">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <i class="fa-brands fa-js"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <P>CSS</P>
-                    </div>
-                    <div class="flex flex-col">
 
-                    </div>
-                    <div class="flex flex-col">
-
-                    </div>
-                </div>
             </div>
         </section>
-        <section id="work">
+        <section id="work" class="min-h-screen bg-footer">
 
         </section>
         <section id="contact" class="min-h-screen bg-purple-950">
