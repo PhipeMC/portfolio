@@ -25,13 +25,53 @@ html {
     font-weight: 700;
 }
 
-.icon {
+.w-icon {
+    min-width: 64px;
+    max-width: 64px;
+    min-height: 64px;
+    max-height: 64px;
     height: 64px;
     width: 64px;
 }
 
 .btn {
     padding: 8px 16px;
+}
+
+.animate-profile {
+    animation: profile 8s linear infinite;
+    transition: border-radius 2s;
+}
+
+.animate-arrow {
+    animation: arrow 2s linear infinite;
+}
+
+.hover\:zoom-out:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #484848 #1e1e1e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #484848;
+    border-radius: 8px;
+    border: 0px none #ffffff;
 }
 
 @keyframes profile {
@@ -53,5 +93,19 @@ html {
 
     100% {
         border-radius: 56% 44% 42% 58%/51% 55% 45% 49%;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(4px);
+    }
+
+    100% {
+        transform: translate(0);
     }
 }
